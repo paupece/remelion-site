@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remelion · Pricing</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/chameleon-demo.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+  <header class="pt-20 pb-10 text-center">
+    <img src="img/logo.svg" alt="Remelion logo" class="h-12 mx-auto chameleon-icon" />
+    <h1 class="text-3xl font-semibold mt-4">Simple, transparent pricing.</h1>
+    <p class="text-slate-600 dark:text-slate-300 mt-2">Start free—upgrade only if you need more power.</p>
+  </header>
+
+  <!-- Pricing table -->
+  <section class="max-w-4xl mx-auto px-4 pb-20 grid md:grid-cols-2 gap-8">
+    <!-- Free -->
+    <div class="pricing-card">
+      <h2 class="pricing-title">Free</h2>
+      <p class="pricing-price">£0<span class="text-base">/mo</span></p>
+      <ul class="pricing-list">
+        <li>2 Personal Group slots</li>
+        <li>1 Leader Caregiver · unlimited Sub‑Leaders</li>
+        <li>Chameleon Icon <span class="line-through opacity-60">Pro only</span></li>
+        <li>Basic analytics</li>
+      </ul>
+      <a href="#" class="primary-btn w-full mt-6">Get Started</a>
+    </div>
+    <!-- Pro -->
+    <div class="pricing-card ring-2 ring-indigo-500 dark:ring-indigo-400">
+      <h2 class="pricing-title">Pro</h2>
+      <p class="pricing-price">£4.99<span class="text-base">/mo</span></p>
+      <ul class="pricing-list">
+        <li>Unlimited Personal Groups & Workspaces</li>
+        <li>Up to 3 Assisted · unlimited Sub‑Leaders</li>
+        <li><strong>Chameleon Icon</strong> colour cycle</li>
+        <li>5 Household Guardians</li>
+        <li>AI deep summaries & encrypted backup</li>
+      </ul>
+      <a href="#" class="primary-btn w-full mt-6">Start 14‑day Trial</a>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-slate-500 dark:text-slate-400">
+    © <span id="year"></span> Remelion · <a href="index.html" class="underline">Home</a>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
