@@ -1,14 +1,14 @@
 /* Botón principal (colorido) */
 .primary-btn{
-  /* padding‑x‑y  px‑derecha‑izquierda | py‑arriba‑abajo */
+  /* padding-x-y: px-derecha-izquierda | py-arriba-abajo */
   padding: 12px 28px;
   border-radius: 12px;
   font-weight: 600;
   color: #fff;
   background-image: linear-gradient(90deg,#6366F1,#3B82F6);
-  transition: opacity .2s;
+  transition: opacity .2s ease;
 }
-.primary-btn:hover{opacity:.9;}
+.primary-btn:hover { opacity: 0.9; }
 
 /* Botón secundario (borde) */
 .secondary-btn{
@@ -16,10 +16,10 @@
   border-radius: 12px;
   font-weight: 600;
   border: 2px solid #6366F1;
-  color:#6366F1;
-  transition: background .2s;
+  color: #6366F1;
+  transition: background .2s ease;
 }
-.secondary-btn:hover{background:#EEF2FF;}
+.secondary-btn:hover { background: #EEF2FF; }
 
 /* Tarjetas de precios */
 .pricing-card{
@@ -31,9 +31,13 @@
 }
 .dark .pricing-card{
   background: rgba(30,41,59,.7);
-  box-shadow:none;
+  box-shadow: none;
 }
 
 /* Título sección */
-.section-h2{font-size:1.25rem;font-weight:600;margin-bottom:8px;}
-.section-p {color:#64748B;}
+.section-h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.section-p
