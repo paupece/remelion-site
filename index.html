@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Remelion – Capture. Recall. Stay on track.</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css" />
+
+  <!-- Fuente Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+  <style>body{font-family:Inter,ui-sans-serif,system-ui;}</style>
+
+  <!-- Tailwind CDN (sin build) -->
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+
+  <!-- Tu hoja extra -->
   <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Demo de icono camaleón -->
   <script defer src="js/chameleon-demo.js"></script>
 </head>
 <body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
-  <!-- Hero --------------------------------------------------- -->
- <header class="relative pt-32 pb-20 text-center px-4 overflow-hidden">
-  <!-- Fondo difuso de colores -->
-  <div class="absolute inset-0 -z-10 bg-gradient-to-br from-indigo-500/20 via-violet-500/15 to-teal-500/10 blur-3xl"></div>
 
-    <img src="img/logo.svg" alt="Remelion logo" class="h-16 mx-auto mb-6 chameleon-icon" />
-    <h1 class="text-4xl font-semibold tracking-tight mb-4">
-      Capture. Recall. Stay on track.
+  <!-- HERO -->
+  <header class="relative pt-32 pb-20 text-center px-4 overflow-hidden">
+    <!-- fondo difuso -->
+    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-indigo-500/20 via-violet-500/15 to-teal-500/10 blur-3xl"></div>
+
+    <img src="img/logo.svg" alt="Remelion logo" class="h-20 mx-auto mb-8 chameleon-icon animate-pulse-slow">
+    <h1 class="text-5xl/tight font-semibold mb-6">
+      Capture now.<br class="hidden sm:inline"> Recall when it matters.
     </h1>
-    <p class="max-w-xl mx-auto text-lg text-slate-600 dark:text-slate-300">
+    <p class="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
       Ultra‑fast capture, adaptive reminders, and a Chameleon Icon that fights notification fatigue.
     </p>
-    <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-      <a href="#features" class="primary-btn">See Features</a>
-      <a href="pricing.html" class="secondary-btn">Pricing</a>
+    <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#features" class="primary-btn shadow-lg hover:shadow-xl transition">See how</a>
+      <a href="pricing.html" class="secondary-btn">Try Free</a>
     </div>
+
+    <!-- mock‑up (pon tu imagen real en img/app-mock.png) -->
+    <img src="img/app-mock.png" alt="" class="absolute right-4 bottom-0 w-44 sm:w-72 drop-shadow-xl pointer-events-none select-none">
   </header>
 
-  <!-- Features ------------------------------------------------ -->
+  <!-- FEATURES -->
   <section id="features" class="py-20 bg-white dark:bg-slate-800">
     <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-12">
       <div>
         <h2 class="section-h2">Radically Fast Capture</h2>
-        <p class="section-p">Photo or voice in ≤2 taps—even from the lock‑screen.</p>
+        <p class="section-p">Take a photo or record a voice note in ≤2 taps—even from the lock‑screen.</p>
       </div>
       <div>
         <h2 class="section-h2">Chameleon Icon</h2>
-        <p class="section-p">Your app‑icon cycles colours after ignored reminders, breaking habituation without chaos.</p>
+        <p class="section-p">App‑icon cycles colours after ignored reminders, breaking habituation without chaos.</p>
       </div>
       <div>
         <h2 class="section-h2">Adaptive Reminders</h2>
@@ -54,13 +64,13 @@
     </div>
   </section>
 
-  <!-- CTA strip ---------------------------------------------- -->
+  <!-- CTA STRIP -->
   <section class="py-16 bg-gradient-to-r from-indigo-600 to-violet-600 text-white text-center">
     <h3 class="text-2xl font-semibold mb-4">Ready to reduce mental clutter?</h3>
     <a href="pricing.html" class="primary-btn inline-block">Try Remelion Free →</a>
   </section>
 
-  <!-- Footer -------------------------------------------------- -->
+  <!-- FOOTER -->
   <footer class="py-10 text-center text-sm text-slate-500 dark:text-slate-400">
     © <span id="year"></span> Remelion · <a href="pricing.html" class="underline">Pricing</a> · Privacy & Terms
   </footer>
