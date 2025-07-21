@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remelion – Capture. Recall. Stay on track.</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/chameleon-demo.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+  <!-- Hero --------------------------------------------------- -->
+  <header class="pt-24 pb-16 text-center px-4">
+    <img src="img/logo.svg" alt="Remelion logo" class="h-16 mx-auto mb-6 chameleon-icon" />
+    <h1 class="text-4xl font-semibold tracking-tight mb-4">
+      Capture. Recall. Stay on track.
+    </h1>
+    <p class="max-w-xl mx-auto text-lg text-slate-600 dark:text-slate-300">
+      Ultra‑fast capture, adaptive reminders, and a Chameleon Icon that fights notification fatigue.
+    </p>
+    <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#features" class="primary-btn">See Features</a>
+      <a href="pricing.html" class="secondary-btn">Pricing</a>
+    </div>
+  </header>
+
+  <!-- Features ------------------------------------------------ -->
+  <section id="features" class="py-20 bg-white dark:bg-slate-800">
+    <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="section-h2">Radically Fast Capture</h2>
+        <p class="section-p">Photo or voice in ≤2 taps—even from the lock‑screen.</p>
+      </div>
+      <div>
+        <h2 class="section-h2">Chameleon Icon</h2>
+        <p class="section-p">Your app‑icon cycles colours after ignored reminders, breaking habituation without chaos.</p>
+      </div>
+      <div>
+        <h2 class="section-h2">Adaptive Reminders</h2>
+        <p class="section-p">Spaced‑repetition engine times nudges for optimal recall—and pauses when you’re busy.</p>
+      </div>
+      <div>
+        <h2 class="section-h2">Caregiver & Household</h2>
+        <p class="section-p">Add caregivers or guardians, share notes, manage habits—privacy and limits built‑in.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA strip ---------------------------------------------- -->
+  <section class="py-16 bg-gradient-to-r from-indigo-600 to-violet-600 text-white text-center">
+    <h3 class="text-2xl font-semibold mb-4">Ready to reduce mental clutter?</h3>
+    <a href="pricing.html" class="primary-btn inline-block">Try Remelion Free →</a>
+  </section>
+
+  <!-- Footer -------------------------------------------------- -->
+  <footer class="py-10 text-center text-sm text-slate-500 dark:text-slate-400">
+    © <span id="year"></span> Remelion · <a href="pricing.html" class="underline">Pricing</a> · Privacy & Terms
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
