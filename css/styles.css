@@ -1,10 +1,39 @@
-/* Extra tiny overrides */
-.primary-btn   { @apply px-6 py-3 rounded-lg font-medium text-white bg-gradient-to-r from-indigo-600 to-violet-600 hover:to-indigo-500 transition; }
-.secondary-btn { @apply px-6 py-3 rounded-lg font-medium bg-white/10 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-100 hover:bg-white/20 transition; }
-.section-h2    { @apply text-xl font-semibold mb-2; }
-.section-p     { @apply text-slate-600 dark:text-slate-300; }
-.pricing-card  { @apply bg-white dark:bg-slate-800 rounded-xl p-8 shadow-sm flex flex-col; }
-.pricing-title { @apply text-xl font-semibold mb-1; }
-.pricing-price { @apply text-4xl font-bold mt-2 mb-6; }
-.pricing-list  { @apply space-y-2 flex-grow; }
-.chameleon-icon{ transition: color .25s linear; }
+/* Botón principal (colorido) */
+.primary-btn{
+  /* padding‑x‑y  px‑derecha‑izquierda | py‑arriba‑abajo */
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #fff;
+  background-image: linear-gradient(90deg,#6366F1,#3B82F6);
+  transition: opacity .2s;
+}
+.primary-btn:hover{opacity:.9;}
+
+/* Botón secundario (borde) */
+.secondary-btn{
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  border: 2px solid #6366F1;
+  color:#6366F1;
+  transition: background .2s;
+}
+.secondary-btn:hover{background:#EEF2FF;}
+
+/* Tarjetas de precios */
+.pricing-card{
+  background: rgba(255,255,255,.7);
+  backdrop-filter: blur(8px);
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.06);
+}
+.dark .pricing-card{
+  background: rgba(30,41,59,.7);
+  box-shadow:none;
+}
+
+/* Título sección */
+.section-h2{font-size:1.25rem;font-weight:600;margin-bottom:8px;}
+.section-p {color:#64748B;}
