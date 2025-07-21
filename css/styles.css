@@ -1,0 +1,10 @@
+/* Extra tiny overrides */
+.primary-btn   { @apply px-6 py-3 rounded-lg font-medium text-white bg-gradient-to-r from-indigo-600 to-violet-600 hover:to-indigo-500 transition; }
+.secondary-btn { @apply px-6 py-3 rounded-lg font-medium bg-white/10 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-100 hover:bg-white/20 transition; }
+.section-h2    { @apply text-xl font-semibold mb-2; }
+.section-p     { @apply text-slate-600 dark:text-slate-300; }
+.pricing-card  { @apply bg-white dark:bg-slate-800 rounded-xl p-8 shadow-sm flex flex-col; }
+.pricing-title { @apply text-xl font-semibold mb-1; }
+.pricing-price { @apply text-4xl font-bold mt-2 mb-6; }
+.pricing-list  { @apply space-y-2 flex-grow; }
+.chameleon-icon{ transition: color .25s linear; }
