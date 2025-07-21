@@ -1,43 +1,46 @@
-/* Botón principal (colorido) */
+/* ANIMACIÓN LOGO */
+@keyframes pulseSlow { 0%,100%{opacity:.90;} 50%{opacity:1;} }
+.animate-pulse-slow{animation:pulseSlow 6s ease-in-out infinite;}
+
+/* Botón principal (gradiente) */
 .primary-btn{
-  /* padding-x-y: px-derecha-izquierda | py-arriba-abajo */
-  padding: 12px 28px;
-  border-radius: 12px;
-  font-weight: 600;
-  color: #fff;
-  background-image: linear-gradient(90deg,#6366F1,#3B82F6);
-  transition: opacity .2s ease;
+  padding:12px 28px;
+  border-radius:12px;
+  font-weight:600;
+  color:#fff;
+  background-image:linear-gradient(90deg,#6366F1,#3B82F6);
+  transition:opacity .2s ease;
 }
-.primary-btn:hover { opacity: 0.9; }
+.primary-btn:hover{opacity:.9;}
 
 /* Botón secundario (borde) */
 .secondary-btn{
-  padding: 12px 28px;
-  border-radius: 12px;
-  font-weight: 600;
-  border: 2px solid #6366F1;
-  color: #6366F1;
-  transition: background .2s ease;
+  padding:12px 28px;
+  border-radius:12px;
+  font-weight:600;
+  border:2px solid #6366F1;
+  color:#6366F1;
+  transition:background .2s ease;
 }
-.secondary-btn:hover { background: #EEF2FF; }
+.secondary-btn:hover{background:#EEF2FF;}
 
-/* Tarjetas de precios */
+/* Tarjeta de precios */
 .pricing-card{
-  background: rgba(255,255,255,.7);
-  backdrop-filter: blur(8px);
-  border-radius: 18px;
-  padding: 32px;
-  box-shadow: 0 6px 24px rgba(0,0,0,.06);
+  background:rgba(255,255,255,.7);
+  backdrop-filter:blur(8px);
+  border-radius:18px;
+  padding:32px;
+  box-shadow:0 6px 24px rgba(0,0,0,.06);
+  display:flex;
+  flex-direction:column;
 }
 .dark .pricing-card{
-  background: rgba(30,41,59,.7);
-  box-shadow: none;
+  background:rgba(30,41,59,.7);
+  box-shadow:none;
 }
 
-/* Título sección */
-.section-h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-.section-p
+/* Títulos y textos */
+.section-h2{font-size:1.25rem;font-weight:600;margin-bottom:8px;}
+.section-p {color:#64748B;}
+.pricing-title{font-size:1.25rem;font-weight:600;margin-bottom:4px;}
+.pricing-price{font-size:2.25rem;font-weight:700;margin:12px 0 24px;}
